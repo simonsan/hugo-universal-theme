@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
+<body>
 
     <div id="all">
 
@@ -11,21 +11,23 @@
 
         {{ partial "nav.html" . }}
 
-        {{ partial "about_abs.html" . }}
+        {{ partial "landingpage-extra/about_abs.html" . }}
 
         {{ partial "features.html" . }}
 
+        {{ partial "landingpage-extra/converter_abs.html" . }}
+
         {{ partial "carousel.html" . }}
 
-        {{ partial "download_abs.html" . }}
+        {{ partial "landingpage-extra/download_abs.html" . }}
 
-        {{ partial "team_abs.html" . }}
+        {{ partial "landingpage-extra/team_abs.html" . }}
 
-	{{ if and (isset .Site.Params "testimonials") .Site.Params.testimonials.enable }}
+        {{ if and (isset .Site.Params "testimonials") .Site.Params.testimonials.enable }}
         {{ partial "testimonials.html" . }}
-	{{ else if and (isset .Site.Params "awards") .Site.Params.awards.enable }}
+        {{ else if (isset .Site.Params "awards") .Site.Params.awards.enable }}
         {{ partial "awards.html" . }}
-	{{ end }}
+        {{ end }}
 
         {{ partial "see_more.html" . }}
 
@@ -40,5 +42,6 @@
 
     {{ partial "scripts.html" . }}
 
-  </body>
+</body>
+
 </html>

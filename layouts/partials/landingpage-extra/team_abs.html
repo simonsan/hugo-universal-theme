@@ -1,10 +1,5 @@
 <section>
     <div id="content">
-        {{ if isset .Params "id" }}
-
-        {{ partial .Params.id . }}
-
-        {{ else }}
 
         <div class="container">
 
@@ -12,10 +7,11 @@
 
                 <div class="col-md-12">
 
-                    <div>
-                        {{ .Content }}
-                        TEAM PLACEHOLDER
-                    </div>
+                    <h1>Who is developing openage?</h1>
+
+                    <h4>The team behind openage is ... [placeholder, write together]</h4> </br>
+
+                <p>placeholder</p>
 
                 </div>
 
@@ -25,7 +21,6 @@
         </div>
         <!-- /.container -->
 
-        {{ end }}
     </div>
     <!-- /#content -->
 </section>
