@@ -1,10 +1,126 @@
 /* your styles go here */
+body {
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero.is-fullheight {
+    min-height: 100vh;
+}
+
+.fYgjQe {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.is-gradient-wine {
+    color:
+        #fff;
+    background: #955251;
+    background: linear-gradient(0deg, #888888, #999999);
+}
+
+svg:not(:root) {
+
+    overflow: hidden;
+
+}
+
+.jZgONX {
+
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    transform: translateX(20%);
+    color:
+
+        rgba(0, 0, 0, 0.15);
+
+}
+
+span {
+
+    font-style: inherit;
+    font-weight: inherit;
+
+}
+
+.cjcTnh {
+    display: flex;
+    margin: 4rem 0px 2rem;
+}
+
+.ffFqIl {
+    z-index: 1;
+    margin-right: 2rem;
+}
+
+.khrVKc {
+    z-index: 1;
+}
+
+.LLZYh {
+    font-size: 1.2em;
+    position: relative;
+    font-family: "cascadia code", sans-serif;
+    padding-bottom: 1.2em;
+    margin-bottom: 0.8rem;
+}
+
+.LLZYh .main {
+
+    font-size: 3.2em;
+    font-weight: bold;
+
+}
+
+.LLZYh .sub {
+
+    font-size: 1.6em;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+.ggGyFg {
+    text-align: center;
+    opacity: 0.7;
+    max-width: 80vw;
+}
+
+.drCzjv {
+    position: fixed;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    z-index: 10;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 3.5rem;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: background-color, border;
+    background-color:
+        rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(40, 38, 49, 0);
+}
 
 .box-image-text .image {
-  min-height: 200px;
-  max-height: 200px;
+    min-height: 200px;
+    max-height: 200px;
 }
 
 .box-simple {
-  min-height: 230px;
+    min-height: 230px;
 }
