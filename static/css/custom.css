@@ -12,11 +12,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(15deg,
-            #7e7e7e,
-            #ccc);
+    background: linear-gradient(15deg, #eeeeee, #cccccc);
     opacity: 0.9;
     filter: alpha(opacity=90);
+}
+
+.home-carousel h1, .home-carousel h2, .home-carousel h3, .home-carousel p, .home-carousel ul {
+    color: 
+    #000;
 }
 
 .hero.is-fullheight {
@@ -39,8 +42,8 @@ body {
 .is-gradient-wine {
     color:
         #fff;
-    background: #7e7e7e;
-    background: linear-gradient(0deg, #7e7e7e, #cccccc);
+    background: #cccccc;
+    background: linear-gradient(15deg, #eeeeee, #cccccc);
 }
 
 .fVdPLr {
