@@ -1,16 +1,19 @@
-<header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+<header class="navbar-affixed-top" data-offset-top="62" data-spy="affix">
 
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+    <div class="navbar navbar-default yamm" id="navbar" role="navigation">
 
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
-                    <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" width="auto" height="52px">
-                    <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" width="auto" height="52px">
+                    <img alt="{{ .Title }} logo" class="hidden-xs hidden-sm"
+                         height="52px" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" width="auto">
+                    <img alt="{{ .Title }} logo" class="visible-xs visible-sm"
+                         height="52px" src="{{ .Site.BaseURL }}{{ .Site.Params.logo_small }}" width="auto">
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
                 <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                    <button class="navbar-toggle btn-template-main" data-target="#navigation" data-toggle="collapse"
+                            type="button">
                         <span class="sr-only">{{ i18n "navToggle" }}</span>
                         <i class="fas fa-align-justify"></i>
                     </button>
@@ -25,7 +28,8 @@
                     <!-- Check if the first child marks a menu section identifier -->
                     {{ $hasSections := (hasPrefix (index .Children 0).Identifier "section.") }}
                     <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}}">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#"
+                           role="button">{{ .Name }} <span class="caret"></span></a>
                         {{ if $hasSections }}
                         <ul class="dropdown-menu">
                             <li>
@@ -33,7 +37,7 @@
                                     <div class="row">
                                         {{ if ne .URL "" }}
                                         <div class="col-sm-6">
-                                            <img src="{{ .URL }}" class="img-responsive hidden-xs" />
+                                            <img class="img-responsive hidden-xs" src="{{ .URL }}"/>
                                         </div>
                                         {{ end }}
                                         <div class="col-sm-3">
@@ -124,10 +128,10 @@
 
                 <form class="navbar-form" role="search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input class="form-control" placeholder="Search" type="text">
                         <span class="input-group-btn">
 
-                            <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                            <button class="btn btn-template-main" type="submit"><i class="fas fa-search"></i></button>
 
                         </span>
                     </div>

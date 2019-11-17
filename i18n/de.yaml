@@ -28,10 +28,10 @@
 - id: contactMessage
   translation: "Ihre Nachricht an uns"
 
-- id: contactSend 
+- id: contactSend
   translation: "Nachricht senden"
 
-- id: navHome 
+- id: navHome
   translation: "zur Hauptseite"
 
 - id: navToggle

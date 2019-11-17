@@ -1,4 +1,6 @@
 <figure class="figure">
-	<img src="{{ .Get "src" }}" class="figure-img img-responsive">
-	{{ with .Get "caption" }}<figcaption class="figure-caption">{{ . }}</figcaption>{{ end -}}
+    <img src="{{ .Get " src" }}" class="figure-img img-responsive">
+    {{ with .Get "caption" }}
+    <figcaption class="figure-caption">{{ . }}</figcaption>
+    {{ end -}}
 </figure>
